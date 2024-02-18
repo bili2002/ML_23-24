@@ -1,4 +1,4 @@
-# Machine Learning and Data Mining, Summer 2022-2023
+# Machine Learning and Data Mining, Summer 2023-2024
 
 ## Set up an environment for working with Jupyter Notebooks
 
