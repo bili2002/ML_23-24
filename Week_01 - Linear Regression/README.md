@@ -194,7 +194,7 @@ Solve all tasks from `numpy_for_home.ipynb`.
 
 **Description**
 
-In class we created a neural network with one neuron that had one input. In this task we're going to model the `AND` and `OR` circuit operations, thus the network is going to have two inputs and thus two weights attached to them. Create two models and train for 1,000 epochs and after each epoch print the values for the parameters of the models and the value of the loss function. When the two models are trained, apply each of them to their corresponding training sets and print the values they predict.
+In class we created a neural network with one neuron that had one input. In this task we're going to **model the `AND` and `OR`** circuit operations, thus the network is going to have two inputs and thus two weights attached to them. Create two models and train for 1,000 epochs and after each epoch print the values for the parameters of the models and the value of the loss function. When the two models are trained, apply each of them to their corresponding training sets and print the values they predict.
 
 **Acceptance criteria**
 
@@ -211,7 +211,7 @@ In class we created a neural network with one neuron that had one input. In this
 
 **Description**
 
-Extend the functionality of task 5 by adding a free-floating parameter (i.e. a parameter that has a weight of `1`) - the `bias`. This would help the model drive the loss down to 0. Out models will now have three parameters, though, note that the `bias` is a parameter of the model itself, it's not part of the dataset.
+Extend the functionality of task 5 (the previous task) by adding a free-floating parameter (i.e. a parameter that has a weight of `1`) - the `bias`. This would help the model drive the loss down to 0. Our models will now have three parameters, though, note that the `bias` is a parameter of the model itself, it's not part of the dataset.
 
 The `bias` parameter allows the model to shift it's prediction when all of its weights become 0.
 
