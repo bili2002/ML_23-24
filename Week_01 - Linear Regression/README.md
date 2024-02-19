@@ -133,7 +133,7 @@ Answer the following questions:
 5. What is the difference between loss functions and metrics?
 6. Why is the use of mean squared error preferred to the use of mean absolute error?
 7. Why can't we cube the difference to get the mean error instead of squaring it?
-8. What does the derivative of a function beneficial during model training?
+8. Why is the derivative of the loss function beneficial during model training?
 
 **Acceptance criteria**
 
