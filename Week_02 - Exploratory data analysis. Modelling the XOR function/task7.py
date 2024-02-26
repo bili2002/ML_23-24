@@ -1,8 +1,5 @@
 import numpy as np
 
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
-
 def create_dataset_and() -> list[(int, int, int)]:
     return [(0, 0, 0), (0, 1, 0), (1, 0, 0), (1, 1, 1)]
 
