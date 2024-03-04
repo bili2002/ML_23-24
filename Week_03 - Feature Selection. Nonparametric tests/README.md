@@ -1,4 +1,4 @@
-# Goals for week 02
+# Goals for week 03
 
 1. Introduce `seaborn`.
 2. Introduce ways to perform `feature selection`.
