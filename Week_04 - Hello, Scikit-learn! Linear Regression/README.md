@@ -17,7 +17,7 @@ Create a machine learning pipeline to perform linear regression and predict the 
 3. Perform Exploratory Data Analysis - minimum 10 tables - practice grouping, aggregating, obtaining statistics for various columns.
 4. Perform Feature Engineering - create at least 1 new feature.
 5. Train and evaluate a linear regression model - calculate `MAE`, `MSE`, `RMSE`.
-6. Interpret at least three of the obtained coefficients.
+6. Interpret at least three of the obtained coefficients (note that this requires that your model is trained on at least three features).
 7. `numpy` is used wherever possible.
 
 ## Task 2
