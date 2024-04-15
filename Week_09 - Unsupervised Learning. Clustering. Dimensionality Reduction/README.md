@@ -8,12 +8,12 @@
 
 ### Task 1
 
-Finish `1_unsupervised_learning.ipynb`.
+Complete `1_unsupervised_learning.ipynb`.
 
 ### Task 2
 
-Finish `2_pca.ipynb`.
+Complete `2_pca.ipynb`.
 
 ### Task 3
 
-Demonstrate newly learning concepts and techniques on [this dataset](https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set).
+Demonstrate newly learned concepts and techniques on [this dataset](https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set).
