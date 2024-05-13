@@ -1,0 +1,2 @@
+CNN cheat sheet: https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks
+RNN chear sheet: https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks
