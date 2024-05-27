@@ -21,7 +21,7 @@ def main() -> None:
     print(value1)
 
     value2 = Value(6)
-    print(value2)python3
+    print(value2)
 ```
 
 should output
