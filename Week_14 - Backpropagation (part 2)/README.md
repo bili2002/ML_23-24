@@ -175,7 +175,7 @@ To do this, we'll need to:
 - add another field to the `Value` class called `_backward` for automatic differentiation of the addition operation;
 - implement a function that accepts a list of `Value` objects and sort them topologically. You can use the following code:
 
-```python3
+```python
 def top_sort(start: Value) -> list[Value]:
     result = []
     visited = set()
