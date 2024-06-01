@@ -1,0 +1,4 @@
+PyCaret: low-code machine learning
+    PyCaret is an open-source, low-code machine learning library in Python that automates machine learning workflows.
+    You can use this tool to do automatic preprocessing, exploration, modelling, evaluation and finetuning: https://pycaret.gitbook.io/docs.
+    See https://nbviewer.org/github/pycaret/examples/tree/main/ for examples.
