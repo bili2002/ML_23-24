@@ -136,7 +136,7 @@ should produce the following output:
 
 Add the hyperbolic tangent as an activation function.
 
-Let's also change the value of the bias to be 6.8813735870195432 (so that we get derivative values with little numbers after the comma) and display the computational graph.
+Let's also change the value of the bias to be `6.8813735870195432` (so that we get derivative values with little numbers after the comma) and display the computational graph.
 
 **Test case:**
 
