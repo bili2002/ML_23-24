@@ -221,8 +221,32 @@ Abstract away the need to set the leaf to `1.0` by implementing a `backward` met
 
 **Test case:**
 
-```console
->>> python3 task09.py
+```python
+def main() -> None:
+    # inputs
+    x1 = Value(2.0, label='x1')
+    x2 = Value(0.0, label='x2')
+
+    # weights
+    w1 = Value(-3.0, label='w1')
+    w2 = Value(1.0, label='w2')
+
+    # bias
+    b = Value(6.8813735870195432, label='b')
+
+    # pass through perceptron
+    x1w1 = x1 * w1; x1w1.label = 'x1w1'
+    x2w2 = x2 * w2; x2w2.label = 'x2w2'
+    x1w1x2w2 = x1w1 + x2w2; x1w1x2w2.label = 'x1w1 + x2w2'
+    logit = x1w1x2w2 + b; logit.label = 'logit'
+
+    # pass through activation
+    L = logit.tanh(); L.label = 'L'
+
+    # backpropagate
+    L.backward()
+
+    draw_dot(L).render(directory='./graphviz_output', view=True)
 ```
 
 should produce the following output:
@@ -241,11 +265,17 @@ To fix this, we can accumulate the gradient instead of resetting it every time `
 
 **Test case:**
 
-```console
->>> python3 task10.py
+```python
+def main() -> None:
+    x = Value(10, label='x')
+    y = x + x
+
+    y.backward()
+
+    draw_dot(y).render(directory='./graphviz_output', view=True)
 ```
 
-should produce the following output:
+should output:
 
 ![10_result](graphviz_output/10_result.svg?raw=true "10_result.svg")
 
@@ -304,10 +334,35 @@ Break down the hyperbolic tangent into the expressions that comprise it and back
 
 **Test case:**
 
-```console
->>> python3 task12.py
+```python
+def main() -> None:
+    # inputs
+    x1 = Value(2.0, label='x1')
+    x2 = Value(0.0, label='x2')
+
+    # weights
+    w1 = Value(-3.0, label='w1')
+    w2 = Value(1.0, label='w2')
+
+    # bias
+    b = Value(6.8813735870195432, label='b')
+
+    # pass through perceptron
+    x1w1 = x1 * w1; x1w1.label = 'x1w1'
+    x2w2 = x2 * w2; x2w2.label = 'x2w2'
+    x1w1x2w2 = x1w1 + x2w2; x1w1x2w2.label = 'x1w1 + x2w2'
+    logit = x1w1x2w2 + b; logit.label = 'logit'
+
+    # pass through activation
+    e = (2 * logit).exp(); e.label = 'e'
+    L = (e - 1) / (e + 1); L.label = 'L'
+
+    # backpropagate
+    L.backward()
+
+    draw_dot(L).render(directory='./graphviz_output', view=True)
 ```
 
-should produce the following output:
+should output:
 
 ![11_result](graphviz_output/11_result.svg?raw=true "11_result.svg")
