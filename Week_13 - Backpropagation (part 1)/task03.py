@@ -1,0 +1,27 @@
+from __future__ import annotations
+
+
+class Value:
+    def __init__(self, data: float) -> None:
+        self.data = data
+
+    def __repr__(self) -> str:
+        return f'Value(data={self.data})'
+
+    def __add__(self, rhs: Value) -> Value:
+        return Value(self.data + rhs.data)
+
+    def __mul__(self, rhs: Value) -> Value:
+        return Value(self.data * rhs.data)
+
+
+def main() -> None:
+    x = Value(2.0)
+    y = Value(-3.0)
+    z = Value(10.0)
+    result = x * y + z
+    print(result)
+
+
+if __name__ == '__main__':
+    main()

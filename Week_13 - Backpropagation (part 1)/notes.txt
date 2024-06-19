@@ -1,0 +1,70 @@
+What is the slope of a line (наклон на линия)?
+    - slope (also gradient) = direction + steepness of a line
+    - often denoted by the letter m
+    - calculated as the ratio of the vertical change to
+        the horizontal change ("rise over run") between
+        two distinct points on the line
+        - through trigonometry, the slope "m" of a line is related to
+            its angle of inclination θ by the tangent function
+            m = tan(θ)
+        - a 45° rising line has slope m = 1 (tan(45) = 1)
+        - a 45° falling line has slope m = -1 (tan(-45) = -1)
+    - see graphic in https://en.wikipedia.org/wiki/Slope
+
+
+What is the steepness of a line (колко стръмна е линия)?
+    - the absolute value of its slope: greater absolute value indicates a steeper line.
+    - direction is defined as follows:
+        - positive slope (m > 0): an increasing line going up from left to right
+            - m = 1 => 45° rising line
+        - negative slope (m < 0): a decreasing line going down from left to right
+            - m = -1 => -45° falling line
+        - zero slope (m = 0): a horizontal line (the graph of a constant function)
+        - undefined / infinite slope: a vertical line
+
+
+Suppose a line runs through two points: P = (1, 2) and Q = (13, 8).
+    What is its slope?
+        m = dy / dx
+        dy = 8 - 2 = 6
+        dx = 13 - 1 = 12
+        m = 6 / 12 = 1 / 2
+        Direction: 1/2 > 0 => positive => up
+        Steepness: 0 < 1/2 < 1 => not very steep
+    
+
+Suppose a line runs through two points: P = (4, 15) and Q = (3, 21).
+    What is its slope?
+        m = dy / dx
+        dy = 21 - 15 = 6
+        dx = 3 - 4 = -1
+        m = 6 / (-1) = -6
+        Direction: -6 < 0 => down
+        Steepness: |-6| = 6 > 1 => steep
+
+
+Derivatives
+    Find the following derivatives:
+        d/dx x^3 = ???
+        d/dx 1/x = ???
+        d/dx 5x^3 = ???
+        d/dx x^2 + x^3 = ???
+        d/dz 5x^2 + z^3 - 7z^4 = ???
+        d/dx cos(x)sin(x) = ???
+        d/dx cos(x) / x = ???
+        d/dx 5e^(5x) = ???
+        d/dx sin(x^2) = ???
+        d/dx 1 / cos(x) = ???
+        d/dx (5x - 2)^3 = ???
+
+
+Backpropagation
+    Calculating derivatives of the loss function with respect to every value node leading up to it.
+    Rules of thumb:
+        + => copy gradient to parents
+            parent1.grad = current.grad
+            parent2.grad = current.grad
+        * => multiply value of other parent with current gradient
+            parent1.grad = parent2.value * current.grad
+            parent2.grad = parent1.value * current.grad
+    Show backpropagation using task 10.
